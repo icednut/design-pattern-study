@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Composite Pattern - Step 4</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<script>
+const Task = class{
+    constructor(title, date){
+       if(!title) throw 'invalid title';
+       this._title = title;
+       this._date = date;
+       this._isComplete = false;
+       this._list = [];
+    }
+    add(task){
+        if(task instanceof Task) this._list.push(task);
+        else throw 'invalid';
+    }
+    remove(task){
+       const list = this._list;
+       if(list.includes(task)) list.splice(list.indexOf(task), 1);
+    }
+    getResult(sort, stateGroup){
+       const list = this._list;
+       return {
+           item:this._getResult(),
+           children:(!stateGroup ? [...list].sort(sort) : [
+              ...list.filter(v=>!v.isComplete()).sort(sort),
+              ...list.filter(v=>v.isComplete()).sort(sort)
+           ]).map(v=>v.getResult(sort, stateGroup))
+       };
+    }
+    _getResult(){throw 'override';}
+    isComplete(){throw 'override';}
+    sortTitle(){throw 'override';}
+    sortDate(){throw 'override';}
+};
+
+const TaskItem = class extends Task{
+    constructor(title, date = Date.now()){
+        super(title);
+        this._date = date;
+        this._isComplete = false;
+    }
+    _getResult(sort, stateGroup){return this;}
+    isComplete(){return this._isComplete;}
+    sortTitle(){return this._title > task._title;}
+    sortDate(){return this._date > task._date;}
+    toggle(){this._isComplete = !this._isComplete;}
+}
+
+const TaskList = class extends Task{
+    constructor(title){super(title);}
+    _getResult(){return this._title;}
+    isComplete(){}
+    sortTitle(){return this;}
+    sortDate(){return this;}
+    
+    byTitle(stateGroup = true){return this.getResult(Task.title, stateGroup);}
+    byDate(stateGroup = true){return this.getResult(Task.date, stateGroup);}
+}
+
+const list1 = new TaskList('s75');
+const item1 = new TaskItem("3강교안작성");
+list1.add(item1);
+
+const sub1 = new TaskItem("코드정리");
+item1.add(sub1);
+
+const subsub1 = new TaskItem("subsub1");
+sub1.add(subsub1);
+
+console.log(list1.getResult(Task.title));
+</script>
+</body>
+</html>

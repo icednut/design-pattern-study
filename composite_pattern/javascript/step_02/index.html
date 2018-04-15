@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Composite Pattern - Step 2</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<script>
+const Task = class{
+    constructor(title, date){
+        if(!title) throw 'invalid title';
+        this._title = title;
+        this._date = date;
+        this._isComplete = false;
+    }
+    isComplete(){return this._isComplete;}
+    toggle(){this._isComplete = !this._isComplete;}
+    sortTitle(task){
+        return this._title > task._title;
+    }
+    sortDate(task){
+        return this._date > task._date;
+    }
+};
+
+const taskSort = {
+    title:(a, b)=>a.sortTitle(b),
+    date:(a, b)=>a.sortDate(b)
+};
+
+const TaskList = class{
+    constructor(title){
+        if(!title) throw 'invalid title';
+        this._title = title;
+        this._list = [];
+    }
+    add(title, date = Date.now()){this._list.push(new Task(title, date));}
+    remove(task){
+        const list = this._list;
+        if(list.include(task)) list.splice(list.indexOf(task), 1);
+    }
+    byTitle(stateGroup = true){return this._getResult('title', stateGroup);}
+    byDate(stateGroup = true){return this._getResult('date', stateGroup);}
+    _getResult(sort, stateGroup){
+        const list = this._list, s = taskSort[sort];
+        return !stateGroup ? [...list].sort(s) : [
+            ...list.filter(v=>!v.isComplete()).sort(s),
+            ...list.filter(v=>v.isComplete()).sort(s)
+        ]
+    }
+};
+
+const list1 = new TaskList('비사이드');
+list1.add('지라설치');
+list1.add('지라클라우드접속');
+
+const list2 = new TaskList('s75');
+list2.add('2강 답안 작성');
+list2.add('3강 교안 작성');
+
+console.log(list1.byTitle());
+console.log(list2.byDate());
+</script>
+</body>
+</html>
