@@ -52,7 +52,7 @@ const TaskItem = class extends Task{
     sortTitle(){return this._title > task._title;}
     sortDate(){return this._date > task._date;}
     toggle(){this._isComplete = !this._isComplete;}
-}
+};
 
 const TaskList = class extends Task{
     constructor(title){super(title);}
@@ -63,7 +63,7 @@ const TaskList = class extends Task{
     
     byTitle(stateGroup = true){return this.getResult(Task.title, stateGroup);}
     byDate(stateGroup = true){return this.getResult(Task.date, stateGroup);}
-}
+};
 
 const list1 = new TaskList('s75');
 const item1 = new TaskItem("3강교안작성");

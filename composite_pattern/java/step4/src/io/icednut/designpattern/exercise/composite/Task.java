@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
  * @author wangeun.lee@sk.com
  * @created 2018. 3. 27.
  */
-public abstract class Task {
+public abstract class Task extends TaskWrapper {
     protected String title;
     protected LocalDateTime date;
     protected boolean isComplete;
@@ -36,13 +36,26 @@ public abstract class Task {
 
     public TaskWrapper getResult(Task.SortAction sortAction, boolean stateGroup) {
         Comparator<Task> sortMethod = sortAction::invoke;
+        List<TaskWrapper> sub;
 
-        List<Task> sub = !stateGroup ?
-                list.stream().sorted(sortMethod).collect(Collectors.toList()) :
-                new ArrayList<>() {{
-                    addAll(list.stream().filter(v -> !v.isComplete()).sorted(sortMethod).collect(Collectors.toList()));
-                    addAll(list.stream().filter(v -> v.isComplete()).sorted(sortMethod).collect(Collectors.toList()));
-                }};
+        if (!stateGroup) {
+            sub = list.stream()
+                    .sorted(sortMethod)
+                    .map(each -> each.getResult(sortAction, stateGroup))
+                    .collect(Collectors.toList());
+        } else {
+            sub = new ArrayList<>();
+            sub.addAll(list.stream()
+                    .filter(v -> !v.isComplete())
+                    .sorted(sortMethod)
+                    .map(each -> each.getResult(sortAction, stateGroup))
+                    .collect(Collectors.toList()));
+            sub.addAll(list.stream()
+                    .filter(v -> v.isComplete())
+                    .sorted(sortMethod)
+                    .map(each -> each.getResult(sortAction, stateGroup))
+                    .collect(Collectors.toList()));
+        }
         return new TaskWrapper(this.getResultComposite(sortAction, stateGroup), sub);
     }
 
@@ -69,36 +82,4 @@ public abstract class Task {
 
         public abstract int invoke(Task a, Task b);
     }
-
-    public static class TaskWrapper {
-        private final Task task;
-        private final List<Task> children;
-
-        public TaskWrapper(Task task, List<Task> children) {
-            this.task = task;
-            this.children = children;
-        }
-
-        public Task getTask() {
-            return task;
-        }
-
-        public List<Task> getChildren() {
-            return children;
-        }
-    }
 }
-
-//class TaskSort {
-//    private Map<String, Comparator<Task>> sortMethods;
-//
-//    public TaskSort() {
-//        this.sortMethods = new HashMap<>();
-//        sortMethods.put("title", (a, b) -> a.sortTitle(b));
-//        sortMethods.put("date", (a, b) -> a.sortDate(b));
-//    }
-//
-//    public Comparator<Task> getSortMethod(String sortType) {
-//        return sortMethods.get(sortType);
-//    }
-//}

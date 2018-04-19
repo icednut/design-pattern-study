@@ -3,6 +3,7 @@ package io.icednut.designpattern.exercise;
 import io.icednut.designpattern.exercise.composite.Task;
 import io.icednut.designpattern.exercise.composite.TaskItem;
 import io.icednut.designpattern.exercise.composite.TaskList;
+import io.icednut.designpattern.exercise.composite.TaskWrapper;
 
 /**
  * @author wangeun.lee@sk.com
@@ -20,7 +21,7 @@ public class Application {
         TaskItem subsub1 = new TaskItem("subsub1", null);
         sub1.add(subsub1);
 
-        Task.TaskWrapper result = list1.getResult(Task.SortAction.TITLE, true);
+        TaskWrapper result = list1.getResult(Task.SortAction.TITLE, true);
         System.out.println(result);
     }
 }
