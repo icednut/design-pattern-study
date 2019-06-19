@@ -2,26 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36d43f1a-eff0-484c-a831-cf3f50e0c324" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/icednut/adapter/exercise/drawing/DrawingEditor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/icednut/adapter/exercise/drawing/Point.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/icednut/adapter/exercise/drawing/manipulator/LineManipulator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/icednut/adapter/exercise/drawing/manipulator/Manipulator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/icednut/adapter/exercise/drawing/manipulator/TextManipulator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/icednut/adapter/exercise/drawing/shape/Line.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/icednut/adapter/exercise/drawing/shape/Shape.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/icednut/adapter/exercise/drawing/shape/inherit/TextShape.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/icednut/adapter/exercise/search/result/SearchDocument.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/icednut/adapter/exercise/search/result/SearchResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/icednut/adapter/exercise/search/service/DBSearchService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/icednut/adapter/exercise/search/service/SearchService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/icednut/adapter/exercise/search/service/SearchServiceTolrAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/icednut/adapter/exercise/search/service/SearchServiceTolrAdapter2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../drawing-external-lib/src/main/java/io/icednut/drawing/external/Coord.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../drawing-external-lib/src/main/java/io/icednut/drawing/external/TextView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../tolr-client/src/main/java/io/icednut/tolr/client/TolrClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../tolr-client/src/main/java/io/icednut/tolr/client/query/TolrQuery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../tolr-client/src/main/java/io/icednut/tolr/client/response/QueryResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../tolr-client/src/main/java/io/icednut/tolr/client/response/TolrDocument.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../drawing-external-lib/src/main/java/io/icednut/drawing/external/Coords.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/icednut/adapter/exercise/drawing/shape/delegate/TextShape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/icednut/adapter/exercise/drawing/shape/delegate/TextShape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/icednut/adapter/exercise/drawing/shape/inherit/TextShape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/icednut/adapter/exercise/drawing/shape/inherit/TextShape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../drawing-external-lib/src/main/java/io/icednut/drawing/external/TextView.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../drawing-external-lib/src/main/java/io/icednut/drawing/external/TextView.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -65,10 +50,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/io/icednut/adapter/exercise/drawing/shape/delegate/TextShape.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-210">
+            <state relative-caret-position="25">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#505#506#0" expanded="true" />
@@ -95,7 +81,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/io/icednut/adapter/exercise/drawing/shape/Line.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="325">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
@@ -104,7 +90,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/io/icednut/adapter/exercise/drawing/shape/Shape.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="100">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="11" />
+              <caret line="5" selection-start-line="5" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -122,23 +108,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/io/icednut/adapter/exercise/drawing/shape/inherit/TextShape.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="37" lean-forward="true" selection-start-line="9" selection-end-line="37" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/icednut/adapter/exercise/search/service/SearchServiceTolrAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="32" selection-start-line="21" selection-end-line="32" />
+            <state relative-caret-position="104">
+              <caret line="16" selection-start-line="16" selection-end-line="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -175,7 +149,19 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/io/icednut/adapter/exercise/search/service/SearchService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="100">
-              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+              <caret line="4" selection-start-line="4" selection-end-line="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/icednut/adapter/exercise/search/service/DBSearchService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="71">
+              <caret line="8" selection-start-line="8" selection-end-line="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -221,18 +207,9 @@
         <option value="$PROJECT_DIR$/src/main/java/io/icednut/adapter/exercise/search/service/DBSearchService.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/icednut/adapter/exercise/search/service/SearchServiceTolrAdapter2.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/icednut/adapter/exercise/App.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/icednut/adapter/exercise/drawing/shape/delegate/TextShape.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/icednut/adapter/exercise/drawing/manipulator/TextManipulator.java" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/misc.xml" />
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/.idea/gradle.xml" />
-        <option value="$PROJECT_DIR$/.idea/uiDesigner.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/io/icednut/adapter/exercise/drawing/shape/inherit/TextShape.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/icednut/adapter/exercise/drawing/shape/delegate/TextShape.java" />
       </list>
     </option>
   </component>
@@ -259,19 +236,6 @@
               <item name="adapter-exercise" type="b2602c69:ProjectViewProjectNode" />
               <item name="java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="external-libs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="adapter-exercise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="external-libs" type="462c0819:PsiDirectoryNode" />
-              <item name="drawing-external-lib.jar" type="ab9368bb:PsiFileNode" />
-            </path>
-            <path>
-              <item name="adapter-exercise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="external-libs" type="462c0819:PsiDirectoryNode" />
-              <item name="drawing-external-lib.jar" type="ab9368bb:PsiFileNode" />
-              <item name="external" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="adapter-exercise" type="b2602c69:ProjectViewProjectNode" />
@@ -337,6 +301,17 @@
               <item name="exercise" type="462c0819:PsiDirectoryNode" />
               <item name="drawing" type="462c0819:PsiDirectoryNode" />
               <item name="shape" type="462c0819:PsiDirectoryNode" />
+              <item name="delegate" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="adapter-exercise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="exercise" type="462c0819:PsiDirectoryNode" />
+              <item name="drawing" type="462c0819:PsiDirectoryNode" />
+              <item name="shape" type="462c0819:PsiDirectoryNode" />
               <item name="inherit" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -347,6 +322,16 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="exercise" type="462c0819:PsiDirectoryNode" />
               <item name="search" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="adapter-exercise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="exercise" type="462c0819:PsiDirectoryNode" />
+              <item name="search" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="adapter-exercise" type="b2602c69:ProjectViewProjectNode" />
@@ -370,6 +355,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/external-libs" />
@@ -437,12 +423,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1560883318851</updated>
-      <workItem from="1560883320433" duration="6470000" />
+      <workItem from="1560883320433" duration="7626000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6470000" />
+    <option name="totallyTimeSpent" value="7626000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
@@ -593,13 +579,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/icednut/adapter/exercise/search/service/SearchService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/icednut/adapter/exercise/search/result/SearchDocument.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
@@ -618,16 +597,6 @@
           <folding>
             <element signature="e#201#202#0" expanded="true" />
             <element signature="e#239#240#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/icednut/adapter/exercise/search/service/DBSearchService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -681,21 +650,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/icednut/adapter/exercise/drawing/shape/delegate/TextShape.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-210">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#505#506#0" expanded="true" />
-            <element signature="e#545#546#0" expanded="true" />
-            <element signature="e#954#955#0" expanded="true" />
-            <element signature="e#1002#1003#0" expanded="true" />
-            <element signature="e#1048#1049#0" expanded="true" />
-            <element signature="e#1086#1087#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/icednut/adapter/exercise/drawing/DrawingEditor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
@@ -706,23 +660,56 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/io/icednut/adapter/exercise/drawing/shape/Shape.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="11" />
+          <caret line="5" selection-start-line="5" selection-end-line="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/icednut/adapter/exercise/drawing/shape/Line.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/icednut/adapter/exercise/search/service/SearchService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" selection-start-line="4" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/icednut/adapter/exercise/search/service/DBSearchService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="71">
+          <caret line="8" selection-start-line="8" selection-end-line="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/icednut/adapter/exercise/drawing/shape/inherit/TextShape.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="37" lean-forward="true" selection-start-line="9" selection-end-line="37" />
+        <state relative-caret-position="104">
+          <caret line="16" selection-start-line="16" selection-end-line="26" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/icednut/adapter/exercise/drawing/shape/delegate/TextShape.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#505#506#0" expanded="true" />
+            <element signature="e#545#546#0" expanded="true" />
+            <element signature="e#954#955#0" expanded="true" />
+            <element signature="e#1002#1003#0" expanded="true" />
+            <element signature="e#1048#1049#0" expanded="true" />
+            <element signature="e#1086#1087#0" expanded="true" />
           </folding>
         </state>
       </provider>
