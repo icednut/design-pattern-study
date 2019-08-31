@@ -1,0 +1,6 @@
+
+zsquid:S1450"WRemove the "topRight" field and declare it as a local variable in the relevant methods.(…é‘Äşÿÿÿÿ8™àñ¶-
+Osquid:S1068",Remove this unused "topRight" private field.(…é‘Äşÿÿÿÿ8Á¿şß¶-
+|squid:S1450"YRemove the "bottomLeft" field and declare it as a local variable in the relevant methods.(ËÆÕ€üÿÿÿÿ8™àñ¶-
+Qsquid:S1068".Remove this unused "bottomLeft" private field.(ËÆÕ€üÿÿÿÿ8Á¿şß¶-
+Fsquid:S1185#"(Remove this method to simply inherit it.(ûÄ•8‘ÑÃô¶-

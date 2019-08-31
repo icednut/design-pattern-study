@@ -1,0 +1,5 @@
+
+usquid:S1450"YRemove the "bottomLeft" field and declare it as a local variable in the relevant methods.(ËÆÕ€üÿÿÿÿ
+Jsquid:S1068".Remove this unused "bottomLeft" private field.(ËÆÕ€üÿÿÿÿ
+ssquid:S1450"WRemove the "topRight" field and declare it as a local variable in the relevant methods.(…é‘Äþÿÿÿÿ
+Hsquid:S1068",Remove this unused "topRight" private field.(…é‘Äþÿÿÿÿ

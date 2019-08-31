@@ -8,6 +8,7 @@ public class Line implements Shape {
 
     @Override
     public void boundingBox(Point bottomLeft, Point topRight) {
+        // 구현하겠지
     }
 
     @Override
