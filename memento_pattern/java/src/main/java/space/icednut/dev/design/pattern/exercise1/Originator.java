@@ -2,44 +2,24 @@ package space.icednut.dev.design.pattern.exercise1;
 
 /**
  * @author will.109
- * @date 27/08/2019
+ * @date 01/09/2019
  **/
 public class Originator {
 
     private String state;
-    private int more;
 
-    public Object getMemento() {
-        return new Memento();
+    public void setState(String state) {
+        System.out.println("Originator: Setting state to " + state);
+        this.state = state;
     }
 
-    public void restore(Object o) {
-        Memento m = (Memento) o;
-
-        state = m.state;
-        more = m.more;
+    public Memento saveToMemento() {
+        System.out.println("Originator: Saving to Memento.");
+        return new Memento(state);
     }
 
-    private class Memento {
-        private String state = Originator.this.state;
-        private int more = Originator.this.more;
-
-        public String toString() {
-            return state + ", " + more;
-        }
-    }
-}
-
-class Caretaker {
-
-    Object memento;
-    Originator originator;
-
-    public void captureState() {
-        memento = originator.getMemento();
-    }
-
-    public void restoreYourself() {
-        originator.restore(memento);
+    public void restoreFromMemento(Memento memento) {
+        state = memento.getSavedMemento();
+        System.out.println("Originator: State after restoring from Memento: " + state);
     }
 }
